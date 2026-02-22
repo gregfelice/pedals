@@ -30,5 +30,7 @@ Thumbs.db
 *-backups/
 *.kicad_prl
 
-# 3D printing
+# 3D printing / OpenSCAD
 *.gcode
+*.stl
+*.csg
