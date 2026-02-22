@@ -43,6 +43,16 @@ The ESP32-C6 (160MHz RISC-V, no audio codec, 520KB SRAM) can't do real-time neur
 
 Guitar players notice latency above ~10ms. Daisy Seed running a quantized GRU/WaveNet model comes in at 3-5ms. Comfortable margin.
 
+## Sourcing
+
+| Supplier | What to buy there | URL |
+|---|---|---|
+| Electrosmith | Daisy Seed (65MB, soldered headers) | https://electro-smith.com/products/daisy-seed |
+| PedalPCB | Terrarium PCB | https://www.pedalpcb.com/product/pcb351/ |
+| Tayda Electronics | Enclosure, pots, jacks, footswitch, DC jack, LED, resistors, caps, knobs | https://www.taydaelectronics.com/ |
+| Amazon / AliExpress | SSD1306 OLED, rotary encoder | — |
+| JLCPCB (v2) | Custom PCB fabrication + SMD assembly | https://jlcpcb.com/ |
+
 ## v1 Build: Terrarium Platform
 
 ### BOM (~$75-85 total)
@@ -79,10 +89,11 @@ All C++ against Electrosmith's **libDaisy** library. Neural inference via **RTNe
 
 | Project | Features | URL |
 |---|---|---|
-| **NeuralSeed** | NAM model loading, multi-model switching | github.com/GuitarML/NeuralSeed |
-| **Seed** | Multi-effect (reverb, delay, tremolo, looper) + neural amp modeling | github.com/GuitarML/Seed |
-| **Mercury** | NAM on the Funbox pedal platform | github.com/GuitarML/Mercury |
-| **bkshepherd's DaisySeedProjects** | OLED display, rotary encoder menu, 6 knobs, MIDI in/out, relay true bypass, open KiCad PCB files | github.com/bkshepherd/DaisySeedProjects |
+| **NeuralSeed** | NAM model loading, multi-model switching | https://github.com/GuitarML/NeuralSeed |
+| **Seed** | Multi-effect (reverb, delay, tremolo, looper) + neural amp modeling | https://github.com/GuitarML/Seed |
+| **Mercury** | NAM on the Funbox pedal platform | https://github.com/GuitarML/Mercury |
+| **bkshepherd's DaisySeedProjects** | OLED display, rotary encoder menu, 6 knobs, MIDI in/out, relay true bypass, open KiCad PCB files | https://github.com/bkshepherd/DaisySeedProjects |
+| **NAM (trainer)** | PyTorch model training pipeline | https://github.com/sdatkinson/neural-amp-modeler |
 
 ## v2 Upgrade: Custom PCB via JLCPCB
 
