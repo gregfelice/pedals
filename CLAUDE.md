@@ -21,10 +21,14 @@ Neural inference pipeline: Analog Signal -> ADC (Daisy Seed) -> RTNeural C++ Inf
 
 ```
 pedals/
-├── pedals.md              # Master build guide (concept through v2)
-├── shopping-list.md       # v1 BOM grouped by supplier
+├── docs/
+│   ├── adr/                      # Architecture decision records
+│   ├── research/                 # Research notes
+│   ├── BACKLOG.md                # Prioritized backlog (P0-P3)
+│   ├── pedals.md                 # Master build guide (concept through v2)
+│   └── shopping-list.md          # v1 BOM grouped by supplier
 └── enclosure/
-    └── v1-terrarium-1590b.scad  # Parametric 3D enclosure (Hammond 1590B)
+    └── v1-terrarium-1590b.scad   # Parametric 3D enclosure (Hammond 1590B)
 ```
 
 ### Hardware Stack
@@ -45,8 +49,9 @@ pedals/
 
 | Document | Path |
 |----------|------|
-| Build Guide | `pedals.md` |
-| Shopping List | `shopping-list.md` |
+| Build Guide | `docs/pedals.md` |
+| Shopping List | `docs/shopping-list.md` |
+| Backlog | `docs/BACKLOG.md` |
 | Enclosure Design | `enclosure/v1-terrarium-1590b.scad` |
 
 ## Status
